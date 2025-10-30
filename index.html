@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="卓譽音樂中心​, ​IT Solution Strategy Development For Your Bussiness, ​The strategy of our teamwork with you, ​Large payments volume or unique business model?, ​We are the best agency to improve your deals, ​Purchase, ​Free, ​$9/month, ​$12/month, Read what our customers say, ​Get Free Advice, Contact Us, ​Sign me up!, INTUITIVE">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.14.0, nicepage.com">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link id="u-page-google-font" rel="stylesheet" href="Home-fonts.css">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "/images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta name="referrer" content="origin"><script>
+    window.recaptchaRenderedV2 = false;
+    window.recaptchaFallback = false;
+    window.recaptchaSiteKeyV2 = '6LebRIorAAAAAEBCYCVXLpZKNt1KxwfbefWqDvFL';
+
+    function gdprConfirmed() {
+        return true;
+    }
+
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6Ldx4PsrAAAAACq6Sl2MfMvCGQCFcZJFPTTGhzry';
+        script.async = true;
+        script.onload = function () {
+            var event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+        document.body.appendChild(script);
+    }
+
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
+
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
+
+        console.error('Error in grecaptcha: ', error);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButtons = document.querySelectorAll('.u-cookies-consent .u-button-confirm');
+        confirmButtons.forEach(function (button) {
+            button.onclick = dynamicLoadScript;
+        });
+    });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
+
+                        try {
+                            grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                                if (!token) {
+                                    throw new Error('Empty token received from reCAPTCHA');
+                                }
+
+                                var forms = document.getElementsByTagName('form');
+
+                                for (var i = 0; i < forms.length; i++) {
+                                    var response = forms[i].querySelector('[name="recaptchaResponse"]');
+
+                                    if (!response) {
+                                        response = document.createElement('input');
+                                        response.setAttribute('type', 'hidden');
+                                        response.setAttribute('name', 'recaptchaResponse');
+                                        forms[i].appendChild(response);
+                                    }
+
+                                    response.value = token;
+                                }
+
+                                submitFormCb();
+                            }).catch((e) => {
+                                showRecaptchaError(e.message);
+                            });
+                        } catch (e) {
+                            showRecaptchaError(e.message);
+                        }
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+                window.grecaptchaObject = grecaptcha;
+            })(
+                grecaptcha,
+                
+                '6Ldx4PsrAAAAACq6Sl2MfMvCGQCFcZJFPTTGhzry',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+
+    <script>
+    window.showRecaptchaV2 = function (form) {
+        if (!form || !form.length) {
+            return;
+        }
+        if (typeof window.grecaptchaObject === 'undefined' || !window.grecaptchaObject) {
+            return;
+        }
+
+        const formEl = form[0];
+
+        let container = document.getElementById('recaptcha-v2-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'recaptcha-v2-container';
+            formEl.parentElement.appendChild(container);
+        }
+
+        let tokenReceived = false;
+        let timeoutHandle;
+
+        if (window.recaptchaRenderedV2 === false || typeof window.recaptchaRenderedV2 === 'undefined') {
+            window.recaptchaRenderedV2 = window.grecaptchaObject.render('recaptcha-v2-container', {
+                'sitekey': window.recaptchaSiteKeyV2,
+                'size': 'invisible',
+                'callback': function (token) {
+                    clearTimeout(timeoutHandle);
+
+                    if (!token) {
+                        showRecaptchaError('reCAPTCHA v2 token was empty. Please try again.');
+                        return;
+                    }
+
+                    tokenReceived = true;
+
+                    let recaptchaResponseV2 = formEl.querySelector('input[name="recaptchaResponseV2"]');
+
+                    if (!recaptchaResponseV2) {
+                        recaptchaResponseV2 = document.createElement('input');
+                        recaptchaResponseV2.type = 'hidden';
+                        recaptchaResponseV2.name = 'recaptchaResponseV2';
+                        formEl.appendChild(recaptchaResponseV2);
+                    }
+
+                    recaptchaResponseV2.value = token;
+
+                    if (window.recaptchaSiteKeyV2) {
+                        let siteKeyInput = formEl.querySelector('input[name="siteKey"]');
+
+                        if (siteKeyInput) {
+                            siteKeyInput.value = window.recaptchaSiteKeyV2;
+                        }
+                    }
+
+                    document.querySelectorAll('.u-form-send-error').forEach(el => {
+                        el.style.display = 'none';
+                    });
+
+                    const event = new CustomEvent('submit', {
+                        detail: { recaptchaPassed: true },
+                        bubbles: true,
+                        cancelable: true,
+                    });
+
+                    formEl.dispatchEvent(event);
+                },
+                'error-callback': function () {
+                    clearTimeout(timeoutHandle);
+                    showRecaptchaError('reCAPTCHA v2 error. Please try again.');
+                },
+                'expired-callback': function () {
+                    clearTimeout(timeoutHandle);
+                }
+            });
+
+            window.grecaptchaObject.reset(window.recaptchaRenderedV2);
+
+            setTimeout(() => {
+                window.grecaptchaObject.execute(window.recaptchaRenderedV2);
+            }, 300);
+
+            timeoutHandle = setTimeout(function () {
+                if (!tokenReceived) {
+                    showRecaptchaError('The Contact Form could not be submitted because Google reCAPTCHA v3 detected unusual activity from your connection. Please try again later, or complete the reCAPTCHA v2 challenge if it appears.');
+                }
+            }, 120000);
+        } else {
+            window.grecaptchaObject.reset(window.recaptchaRenderedV2);
+
+            setTimeout(() => {
+                window.grecaptchaObject.execute(window.recaptchaRenderedV2);
+            }, 300);
+        }
+    };
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="/" data-include-products="false" class="u-body u-clearfix u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1">
+          <img src="/images/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" tabindex="-1" aria-label="Open menu" aria-controls="c31e">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/" style="padding: 10px 20px;">關於我們</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/#sec-8e98" data-page-id="936201858" style="padding: 10px 20px;">辦學理念</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/#sec-8f1a" data-page-id="936201858" style="padding: 10px 20px;">課程簡介</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/#sec-a8c5" data-page-id="936201858" style="padding: 10px 20px;">常見問題</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/#sec-ecf0" data-page-id="936201858" style="padding: 10px 20px;">聯絡我們</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="tel:+85268293515" style="padding: 10px 20px;">WhatsApp</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse" id="c31e" role="region" aria-label="Menu panel">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="/">關於我們</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="/#sec-8e98" data-page-id="936201858">辦學理念</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="/#sec-8f1a" data-page-id="936201858">課程簡介</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="/#sec-a8c5" data-page-id="936201858">常見問題</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="/#sec-ecf0" data-page-id="936201858">聯絡我們</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="http://wa.me/85268193515">WhatsApp</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="skrollable u-align-center u-clearfix u-container-align-center u-image u-parallax u-shading u-section-1" id="sec-62bd" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <h6 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">EH MUSIC CENTER</h6>
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-2">卓譽音樂中心 </h1>
+        <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3"> 讓指尖躍動的音符，奏出專屬於你的音樂旅程</h5>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-base u-palette-4-base u-radius-50 u-btn-1">聯絡我們</a>
+                </div>
+              </div>
+              <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-2">聯絡我們</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-185e">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-container-layout-1">
+                  <h5 class="u-text u-text-palette-4-base u-text-1"> 關於我們</h5>
+                  <h2 class="u-custom-font u-font-montserrat u-text u-text-2"> 一對一音樂課程</h2>
+                  <p class="u-text u-text-3"> 卓譽音樂中心位於香港旺角亞皆老街100號，是一家專業的一對一音樂教育機構，專注為4歲以上兒童、青少年及成人提供鋼琴、長笛、薩克斯、二胡、古箏、小提琴、結他、爵士鼓、聲樂等多元化樂器課程。我們匯聚持有英皇/央音/港澳台名校資歷的導師團隊，搭配隔音琴房與德國/日本進口樂器，打造優質學習環境。無論是音樂啟蒙、英皇考級衝刺，還是成人興趣重拾，卓譽都以「專業‧個性化」陪伴每位學員實現音樂夢想。 </p>
+                  <ul class="u-custom-list u-text u-text-default u-text-4">
+                    <li>
+                      <div class="u-list-icon u-text-palette-3-base">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">►</div>
+                      </div> 一對一教學
+                    </li>
+                    <li>
+                      <div class="u-list-icon u-text-palette-3-base">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">►</div>
+                      </div>專業教學團隊<br>
+                    </li>
+                  </ul>
+                  <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-base u-palette-4-base u-radius-50 u-btn-1">聯絡我們</a>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1280" data-image-height="853">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-image u-section-3" id="sec-8f1a" data-image-width="1280" data-image-height="759">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-opacity u-opacity-80 u-white u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-4-base u-text-1"> 課程概覽</h5>
+                  <h2 class="u-custom-font u-font-montserrat u-text u-text-2"> 課程簡介&nbsp;</h2>
+                  <h4 class="u-custom-font u-font-montserrat u-text u-text-3"> 所有課程均於隔音琴房進行，<br>配備Steinway/Kawai/Yamaha等名琴，<br>立即私訊預約試課！
+                  </h4>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <p class="u-custom-font u-font-montserrat u-text u-text-default u-text-4"> 卓譽音樂中心提供一對一樂器演奏課程（鋼琴、長笛、薩克斯、單簧管、二胡、古箏、爵士鼓、小提琴、結他、葫蘆絲、牧童笛、聲樂）與樂理/試唱練耳團體班，適合4歲以上兒童至成人。<br>
+                    <br>🔹 兒童課程：音樂啟蒙＋英皇考級（ABRSM 1-8級）&nbsp;<br>🔹 成人課程：興趣班／陪練／考級衝刺（可選深夜時段）&nbsp;<br>🔹 陪練課程：專屬導師陪同練習，快速糾正技巧<br>
+                    <br>
+                  </p>
+                  <div class="u-expanded-width u-list u-list-1">
+                    <div class="u-repeater u-repeater-1">
+                      <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+                        <div class="u-container-layout u-similar-container u-container-layout-3">
+                          <h3 class="u-text u-text-palette-4-base u-text-5" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">1:1</h3>
+                          <p class="u-text u-text-6">專人教授</p>
+                        </div>
+                      </div>
+                      <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+                        <div class="u-container-layout u-similar-container u-container-layout-4">
+                          <h3 class="u-text u-text-palette-4-base u-text-7" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">100%</h3>
+                          <p class="u-text u-text-8">用心教學 </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-palette-4-dark-3 u-section-4" id="sec-1e5c">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div class="u-align-left u-container-align-left u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-custom-font u-font-montserrat u-text u-text-1">多款樂器，多樣課程</h2>
+            <p class="u-text u-text-2"> 學琴永遠唔會遲，3至80歲都可以<br>無須樂理根底 – 提供一個即興學習方法在課程後能活用在任何樂曲，無須樂理鋼琴根底和機械式練習，保證教學方法有趣又速成<br>
+            </p>
+            <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-base u-palette-4-base u-radius-50 u-btn-1">聯絡我們</a>
+          </div>
+        </div>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-1" data-image-width="1280" data-image-height="853">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-2"></div>
+            </div>
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-2" data-image-width="1280" data-image-height="817">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-3"></div>
+            </div>
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-3" data-image-width="1155" data-image-height="770">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-4"></div>
+            </div>
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-4" data-image-width="1280" data-image-height="853">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-5"></div>
+            </div>
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-5" data-image-width="1500" data-image-height="1000">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-6"></div>
+            </div>
+            <div class="u-container-style u-custom-item u-image u-list-item u-repeater-item u-image-6" data-image-width="1000" data-image-height="1000">
+              <div class="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-xl u-container-layout-7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-5" id="sec-145b">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-palette-3-base u-radius-15 u-shape-round u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
+                  <h4 class="u-text u-text-body-alt-color u-text-default u-text-1"> 常規課程</h4>
+                  <a href="" class="u-active-palette-3-light-2 u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-radius-31 u-text-active-black u-text-body-color u-text-hover-black u-white u-btn-1">皇牌課程</a>
+                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2"> 鋼琴班</h1>
+                  <a href="http://wa.me/85268193515" class="u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-radius-50 u-text-palette-4-base u-white u-btn-2">了解更多&nbsp;&nbsp;<span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 268.832 268.832" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"></path>
+</g></svg></span>
+                  </a>
+                  <ul class="u-text u-text-3">
+                    <li> 鋼琴結構及姿勢介紹</li>
+                    <li>左右手配合，手指靈活及耐力訓練</li>
+                    <li>音階(scales)、琶音(Arpeggios)訓練及不同的伴奏形式</li>
+                    <li>多種指法、和弦理論及和弦的彈奏要訣</li>
+                    <li>認識及學習不同時期的古典音樂(包括：巴洛克時期、古典樂時期、浪漫派時期、19世紀時期作品)</li>
+                    <li>樂理知識、閱譄訓練</li>
+                    <li>聆聽訓練</li>
+                    <li>多種節奏訓練</li>
+                    <li>多種複雜拍子認識</li>
+                    <li>鋼琴保養知識</li>
+                    <li>演奏與應試技巧</li>
+                    <li>安排報考英國皇家音樂學院、聖三一音樂學院考試</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-radius-15 u-size-20 u-white u-layout-cell-2">
+                <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                  <h4 class="u-text u-text-default u-text-4"> 常規課程</h4>
+                  <h1 class="u-custom-font u-font-pt-sans u-text u-text-default u-text-palette-3-base u-text-5"> 小提琴</h1>
+                  <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-palette-3-base u-palette-4-base u-radius-50 u-text-body-alt-color u-btn-3">了解更多&nbsp;<span class="u-icon u-text-white u-icon-2"><svg class="u-svg-content" viewBox="0 0 268.832 268.832" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"></path>
+</g></svg></span>
+                  </a>
+                  <ul class="u-text u-text-6">
+                    <li>小提琴結構及姿勢介紹</li>
+                    <li>如何選擇合適的提琴 </li>
+                    <li>左右手配合、手指靈活及耐力訓練 </li>
+                    <li>學習全、中和上半弓技法 </li>
+                    <li>音色及音準訓練 </li>
+                    <li>指法/持弓認識、音階訓練及以不同的伴奏形式練習 </li>
+                    <li>多種指法、和弦理論及和弦的要訣 </li>
+                    <li>研究古典音樂 (包括: 巴洛克時期，古典樂派時期，浪漫派時期，19世紀時期 作品）</li>
+                    <li>針對訓練Arpeggios,speed solo,scales的運用 </li>
+                    <li>樂理知識、閱譜訓練</li>
+                    <li>多種節奏感訓練及複雜拍子認識 </li>
+                    <li>小提琴保養知識</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-radius-15 u-right-cell u-size-20 u-white u-layout-cell-3">
+                <div class="u-container-layout u-valign-top u-container-layout-3">
+                  <h4 class="u-text u-text-default u-text-7"> 常規課程</h4>
+                  <h1 class="u-custom-font u-font-pt-sans u-text u-text-default u-text-palette-3-base u-text-8"> 流行鼓</h1>
+                  <a href="http://wa.me/85268193515" class="u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-hover-palette-3-base u-palette-4-base u-radius-50 u-text-body-alt-color u-btn-4">了解更多&nbsp;<span class="u-icon u-text-white u-icon-3"><svg class="u-svg-content" viewBox="0 0 268.832 268.832" x="0px" y="0px" style="width: 1em; height: 1em;"><g><path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"></path>
+</g></svg></span>
+                  </a>
+                  <ul class="u-text u-text-9">
+                    <li> 流行鼓結構及姿勢介紹</li>
+                    <li>手部、腳部靈活及耐力訓練</li>
+                    <li>學習過百種節拍技巧</li>
+                    <li>多種複雜拍子認識</li>
+                    <li>深入研究藍調、搖滾、爵士以及多種音樂風格的演繹方式</li>
+                    <li>多種節奏感練習</li>
+                    <li>氣氛與感情運用</li>
+                    <li>流行鼓保養知識</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-section-6" id="block-1">
+      <div class="u-align-left u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1"><span class="u-align-center u-custom-item u-icon u-text-palette-1-base u-icon-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xlink:href="#svg-9cc6"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-9cc6" style="enable-background:new 0 0 512 512;"><g><g><path d="M478.609,99.726H441.34c4.916-7.78,8.16-16.513,9.085-25.749C453.38,44.46,437.835,18,411.37,6.269    c-24.326-10.783-51.663-6.375-71.348,11.479l-47.06,42.65c-9.165-10.024-22.34-16.324-36.962-16.324    c-14.648,0-27.844,6.32-37.011,16.375l-47.12-42.706C152.152-0.111,124.826-4.502,100.511,6.275    C74.053,18.007,58.505,44.476,61.469,73.992c0.927,9.229,4.169,17.958,9.084,25.734H33.391C14.949,99.726,0,114.676,0,133.117    v50.087c0,9.22,7.475,16.696,16.696,16.696h478.609c9.22,0,16.696-7.475,16.696-16.696v-50.087    C512,114.676,497.051,99.726,478.609,99.726z M205.913,94.161v5.565H127.37c-20.752,0-37.084-19.346-31.901-40.952    c2.283-9.515,9.151-17.626,18.034-21.732c12.198-5.638,25.71-3.828,35.955,5.445l56.469,51.182    C205.924,93.834,205.913,93.996,205.913,94.161z M417.294,69.544c-1.244,17.353-16.919,30.184-34.316,30.184h-76.891v-5.565    c0-0.197-0.012-0.392-0.014-0.589c12.792-11.596,40.543-36.748,55.594-50.391c8.554-7.753,20.523-11.372,31.587-8.072    C409.131,39.847,418.455,53.349,417.294,69.544z"></path>
+</g>
+</g><g><g><path d="M33.391,233.291v244.87c0,18.442,14.949,33.391,33.391,33.391h155.826V233.291H33.391z"></path>
+</g>
+</g><g><g><path d="M289.391,233.291v278.261h155.826c18.442,0,33.391-14.949,33.391-33.391v-244.87H289.391z"></path>
+</g>
+</g></svg></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-1">
+                  個人化課程
+                </h3>
+                <ul class="u-align-left u-text u-text-2">
+                  <li> 個人學習檔案：<br>定立長遠目標及記錄學習進程
+                  </li>
+                  <li>每堂小總結：<br>讓家長/學員和老師鼓勵同行
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2"><span class="u-align-center u-custom-item u-icon u-text-palette-1-base u-icon-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 511.846 511.846" style=""><use xlink:href="#svg-3829"></use></svg><svg class="u-svg-content" viewBox="0 0 511.846 511.846" id="svg-3829"><g><path d="m225.336 258.021-163.44-88.824c-7.27-3.949-15.855-3.786-22.969.443-7.114 4.228-11.359 11.693-11.359 19.969v206.052c0 8.337 4.502 16.076 11.75 20.197l163.443 92.917c3.603 2.048 7.543 3.071 11.484 3.071 4.016 0 8.031-1.063 11.682-3.188 7.231-4.207 11.548-11.714 11.548-20.081v-210.143c0-8.521-4.65-16.343-12.139-20.413z"></path><path d="m454.621 115.6c-.011-8.7-4.817-16.591-12.54-20.594l-178.226-92.399c-6.748-3.5-14.791-3.474-21.514.065l-175.605 92.399c-7.646 4.025-12.402 11.892-12.413 20.533-.01 8.639 4.727 16.517 12.362 20.559l175.606 92.976c3.4 1.799 7.133 2.699 10.868 2.699 3.689 0 7.379-.878 10.745-2.635l178.23-92.974c7.714-4.024 12.499-11.929 12.487-20.629z"></path><path d="m472.919 169.64c-7.11-4.229-15.699-4.396-22.966-.444l-163.445 88.825c-7.487 4.07-12.137 11.891-12.137 20.412v210.143c0 8.367 4.317 15.874 11.548 20.081 3.651 2.125 7.665 3.187 11.682 3.187 3.94 0 7.882-1.023 11.484-3.07l163.444-92.917c7.248-4.121 11.749-11.86 11.749-20.197v-206.051c0-8.276-4.245-15.741-11.359-19.969z"></path>
+</g></svg></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-3">
+                 定期表演比賽及分享會
+                </h3>
+                <ul class="u-align-left u-text u-text-4">
+                  <li> 以表演及分享作為練習動力，同時建立表演及分享文化， 互相切磋觀摩，結識志同道合的夥伴</li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3"><span class="u-align-center u-custom-item u-icon u-text-palette-1-base u-icon-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xlink:href="#svg-3039"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-3039" style="enable-background:new 0 0 512 512;"><g><g><path d="M493.563,431.87l-58.716-125.913c-32.421,47.207-83.042,80.822-141.639,91.015l49.152,105.401    c6.284,13.487,25.732,12.587,30.793-1.341l25.193-69.204l5.192-2.421l69.205,25.193    C486.63,459.696,499.839,445.304,493.563,431.87z"></path>
+</g>
+</g><g><g><path d="M256.001,0C154.815,0,72.485,82.325,72.485,183.516s82.331,183.516,183.516,183.516    c101.186,0,183.516-82.325,183.516-183.516S357.188,0,256.001,0z M345.295,170.032l-32.541,31.722l7.69,44.804    c2.351,13.679-12.062,23.956-24.211,17.585l-40.231-21.148l-40.231,21.147c-12.219,6.416-26.549-3.982-24.211-17.585l7.69-44.804    l-32.541-31.722c-9.89-9.642-4.401-26.473,9.245-28.456l44.977-6.533l20.116-40.753c6.087-12.376,23.819-12.387,29.913,0    l20.116,40.753l44.977,6.533C349.697,143.557,355.185,160.389,345.295,170.032z"></path>
+</g>
+</g><g><g><path d="M77.156,305.957L18.44,431.87c-6.305,13.497,7.023,27.81,20.821,22.727l69.204-25.193l5.192,2.421l25.193,69.205    c5.051,13.899,24.496,14.857,30.793,1.342l49.152-105.401C160.198,386.779,109.578,353.165,77.156,305.957z"></path>
+</g>
+</g></svg></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-5"> 考試合格保證</h3>
+                <ul class="u-align-left u-text u-text-6">
+                  <li> 學員達到相應級別的能力後會獲得老師推薦保送參與考試，學員可透過取得國際認可資歷來肯定自己的努力。如學員出席考試但因應個別的狀況而最終不合格，我們會把考試報名費保留作下次考試之用</li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-4">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-4"><span class="u-align-center u-custom-item u-file-icon u-icon u-text-palette-1-base u-icon-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="https://www.flaticon.com/free-icon/teacher_12404427?term=teacher&page=1&position=45&origin=search&related_id=12404427" alt=""></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-7">
+                  嚴選導師
+                </h3>
+                <ul class="u-align-left u-text u-text-8">
+                  <li> 學院導師當中不乏考獲演奏級及畢業於各大院校</li>
+                  <li> 國際著名音樂家到場指導：<br>鋼琴家劉詩昆、鮑惠喬、薛汀哲先生及著名作曲家儲望華先生
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-5">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-5"><span class="u-align-center u-custom-item u-file-icon u-icon u-text-palette-1-base u-icon-5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1865083-4beef376.png" alt=""></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-9">
+                  地點方便 環境舒適
+                </h3>
+                <ul class="u-align-left u-text u-text-10">
+                  <li> 旺角站步行2分鐘</li>
+                  <li>時間任選：平日假日同價，配合你時間需要</li>
+                  <li>環境寛敞高尚舒適，而且設備不時更新，專業齊全</li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-6">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-6"><span class="u-align-center u-custom-item u-file-icon u-icon u-text-palette-1-base u-icon-6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="/images/1077086-9fe0db20.png" alt=""></span>
+                <h3 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-11">
+                  貼心服務
+                </h3>
+                <ul class="u-align-left u-text u-text-12">
+                  <li> 可選廣東話​或普通話學習</li>
+                  <li>與學生家長跟進課程進度</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-gradient u-lightbox u-section-7" id="sec-a8c5">
+      <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-sm u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1"><span style="font-weight: 700;">常見</span><span style="font-weight: 700;">問題</span>
+        </h2>
+        <div class="data-layout-selected u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-align-left u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-bottom-lg u-valign-top-md u-valign-top-sm u-valign-top-xl u-container-layout-1">
+                  <div class="u-carousel u-expanded-width u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-none u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-28db">
+                    <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+                      <li data-u-target="#carousel-28db" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="2" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="3" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="4" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="5" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="6" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="7" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="8" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="9" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="10" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="11" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="12" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="13" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="14" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="15" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="16" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                      <li data-u-target="#carousel-28db" data-u-slide-to="17" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                    </ol>
+                    <div class="u-carousel-inner u-gallery-inner u-gallery-inner-1" role="listbox">
+                      <div class="u-active u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-1">
+                        <div class="u-back-slide" data-image-width="1440" data-image-height="1080">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/539722869_10162992403704454_1747300494174552923_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=r5DgojxrYwsQ7kNvwF0lWMC&_nc_oc=AdmXgB2ABbj4d82XiiV9SkOUHDZ_DFzPn0DJncd9yjv6Cqi-eLsQGNyjSRNyqaET7hM&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=kbuAzDYGdswY6Y9BoMzZFw&oh=00_AfehAHQI2-duw2I6yDB5cYI65uXkubSX9QfuucARQvh5Cw&oe=69091E5E">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-1">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-2">
+                        <div class="u-back-slide" data-image-width="1122" data-image-height="656">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/540701628_122106743930990989_6967250812206776789_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dYN0b9IFRQgQ7kNvwG0Mo25&_nc_oc=AdkKuXZgj2z48h9aC1Qiargud_XbbISC9NnFBvqataIL8JY8-2Xn60bRIexcKocvLyo&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=bLC1YQkn7IadNR0kK1I9yQ&oh=00_AffIYyR9s9Qqlcp-wjQpEpWr3qB5Hj22Z7qLb0iyQPgByQ&oe=690917B2">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-2">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-3">
+                        <div class="u-back-slide" data-image-width="1440" data-image-height="1080">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/540576859_122106743900990989_2374345970696208220_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5CNfeq6cVrAQ7kNvwF9HMRY&_nc_oc=AdmtWOffm0uRVH-YbqfOpVwMJNXPSfjVneouhb5lRuRcYqrSARvYgc8ejHFH8A6TVfA&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=v9zquFcN-dm9MJ3XBEueGA&oh=00_AffpebWevrQR1zAjobaY3sJCTO0CsMHkm0MaBfP-Xp9vJA&oe=690906C4">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-3">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-4">
+                        <div class="u-back-slide" data-image-width="1440" data-image-height="1080">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/540679484_122106743858990989_7211783625428215958_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=r_OiEcIECDsQ7kNvwGWr1fU&_nc_oc=Adlg25oo3xO7StKeDz03oLc3fZ266zGhxCvWWwi68y6NIwzK25mOVmL38KmdufFeE4c&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=NTMACMeUdtYn6UGD5OQLTg&oh=00_AffEL37hvXcAhfydX9OrW1A7RvnMgeXQQ5Buvirc40eDvw&oe=6908F325">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-4">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-5">
+                        <div class="u-back-slide" data-image-width="1440" data-image-height="1080">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/571143880_122120092064990989_6274949195320020331_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bq83b6WqjkUQ7kNvwFd7KWr&_nc_oc=AdmA0z1Scf1oUMZdmG040iwzIwfkwva5zkMBAMAJ_q9XlNVdDv8T46DGO_NtFcaxdFY&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=_-rFxlvHsDoIyOWYv9usfg&oh=00_AfdR-SjkB-VsSPyAUpRNcsLNWyqYe8apeRyrGo3bGtspFw&oe=6908F631">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-5">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-6">
+                        <div class="u-back-slide" data-image-width="1440" data-image-height="1080">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/573094730_122120092070990989_8599373720593435504_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NLOpgHOyP6wQ7kNvwGAePv6&_nc_oc=Adkhf9ZDbTaJDlGKtCJjVeHCRxCknUid-vOw490vdrQC_7JU69kRnLMus7h_5H0ZKKU&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=WSVQBq5AG_KlttODn8ByKQ&oh=00_AfcSGM5-vo_2GfV7yWUnifpebizTL-aJv1LPnkxS25s78g&oe=6908FB93">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-6">
+                          <h3 class="u-gallery-heading" style="">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-7" data-image-width="1080" data-image-height="1440">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/571691965_122120092178990989_7299827045650130485_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Vc1DBr6VZQEQ7kNvwFw6bJo&_nc_oc=Adkj0dvmjFdOpRKSTfZXwuLo7OXbJDvMSr3zK6AAihaQoSWflcVhshbtM_32OXP5woU&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=DNYho-w6fWdgl8akqRn1dg&oh=00_AffpLvBm_-4lQzq2FlEeuRtEZDuEGsyuITAxsWaBWnN_vA&oe=6908F81E">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-7"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-8" data-image-width="1080" data-image-height="1440">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/571252958_122120092196990989_6408883348671623734_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dSbjOkjoc7AQ7kNvwHXLm_a&_nc_oc=AdleWMM5We1zdvg6mCR06MQKxa1ABzikBg3dUmRFZhH5wRx7kiRxGkfin7-NUwe__JE&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=MDY0I7oOQSjyCEjDqquSDw&oh=00_AfdjO75VdJiw1J6eOOW5G7NtItp-TxsrY3pj-yMooltzsA&oe=6908FABC">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-8"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-9" data-image-width="1440" data-image-height="1080">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/571778020_122120092202990989_1621028244938753710_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MJf8Is1GF9cQ7kNvwHRmEsI&_nc_oc=AdklLGPeBmKSTiDJ7bIA9u4KpEQho-W6LCbhzI06ezmtRPPZ_jxwf3iyVpKuL9YFnP0&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=LS5RciM8nAKTri4W9vfDgg&oh=00_AfeN9MGr4TgbrtwyREUAHDEcdFvmna_TI_vcG-UlbMtjkg&oe=6908F3DD">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-9"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-10" data-image-width="1080" data-image-height="1440">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/571333246_122120092190990989_917776397971357636_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JnaLvJaNaxsQ7kNvwEHwszA&_nc_oc=Admv3U1dtw578WR0747DJVUuXnTZuJp_zsaTm_PLqjj4GE9OxTCHLE0kcZcW_gBWsU4&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_gid=odvNWQslbe0HV1fyaimjdg&oh=00_Afc-1hAkfjrjrRHyrOrDV9lvo_Z57T-uEpjPiGxhzm0ooQ&oe=69090542">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-10"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-11" data-image-width="1440" data-image-height="1080">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/570328369_122119686434990989_7688961124387353115_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=pcMlskzIrOkQ7kNvwHzoHfa&_nc_oc=AdmftJJDk1_83m5l9UlP5Uy39IqwahvNB0rUxepr3JVwCClRHETU8lXHv85310xP7ko&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_gid=PnAvHQ1vJF1PjObiSPjyqA&oh=00_AfdJBi0-Ks7XrZ7yK_rxFWp6drN2F5id40IpgqJ1CNrA6g&oe=6909080E">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-11"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>
+                      <div class="u-carousel-item u-effect-hover-zoom u-gallery-item u-shape-rectangle u-carousel-item-12" data-image-width="1440" data-image-height="1080">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/571341054_122119151618990989_4738222382348676011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=m6yLy-S30mUQ7kNvwH_H7zr&_nc_oc=AdlxeoJ8oRBSC1MDGhhihjB5w1dZFZ8Mftn2Uys_h5XzBpJMZ0lgoLYGDUszPzAP8I8&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=zMtG2CQ5GishsNCBqNZipQ&oh=00_AfcQW9irfibgWD9N98hd_XTFK7qzuGrBMiT3Odm0-rk8kQ&oe=690910BD">
+                        </div>
+                        <div class="u-align-center u-over-slide u-valign-bottom u-over-slide-12"></div>
+                        <style data-mode="XL" data-visited="true"></style>
+                        <style data-mode="LG"></style>
+                        <style data-mode="MD" data-visited="true"></style>
+                        <style data-mode="SM"></style>
+                        <style data-mode="XS" data-visited="true"></style>
+                      </div>                                      
+                    </div>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-28db" role="button" data-u-slide="prev"><span aria-hidden="true">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg></span><span class="sr-only">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg></span>
+                    </a>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-28db" role="button" data-u-slide="next"><span aria-hidden="true">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg></span><span class="sr-only">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                <div class="u-container-layout u-valign-top-lg u-valign-top-sm u-valign-top-xl u-container-layout-2">
+                  <div class="u-accordion u-collapsed-by-default u-expanded-width u-spacing-2 u-accordion-1" role="tablist">
+                    <div class="u-accordion-item u-accordion-item-1">
+                      <a class="u-accordion-link u-button-style u-text-palette-4-base u-accordion-link-1" id="link-accordion-7c0e" aria-controls="accordion-7c0e" aria-selected="false" role="tab"><span class="u-accordion-link-text"> 🎵 現在開始學樂器會太遲嗎？</span><span class="u-accordion-link-icon u-icon u-icon-circle u-palette-3-base u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-347e"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-347e"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+                      </a>
+                      <div class="u-accordion-pane u-align-left u-container-align-left u-container-style u-white u-accordion-pane-1" id="accordion-7c0e" aria-labelledby="link-accordion-7c0e" role="tabpanel">
+                        <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                          <p class="u-text u-text-default u-text-2"> 絕對不會！音樂無分年齡，我們的學員從4歲到70歲都有。無論您是孩童、青少年或成年人，我們都會根據您的年齡與學習目標，量身定制適合的課程內容，讓您輕鬆踏入音樂世界。</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-accordion-item u-accordion-item-2">
+                      <a class="u-accordion-link u-button-style u-text-palette-4-base u-accordion-link-2" id="link-accordion-05cb" aria-controls="accordion-05cb" aria-selected="false" role="tab"><span class="u-accordion-link-text"> 🎵 如果我有一定基礎，亦可以學習嗎？</span><span class="u-accordion-link-icon u-icon u-icon-circle u-palette-3-base u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-ae03"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-ae03"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+                      </a>
+                      <div class="u-accordion-pane u-align-left u-container-align-left u-container-style u-white u-accordion-pane-2" id="accordion-05cb" aria-labelledby="link-accordion-05cb" role="tabpanel">
+                        <div class="u-container-layout u-valign-top u-container-layout-4">
+                          <p class="u-text u-text-default u-text-3">當然可以！我們會為已有基礎的學員進行程度評估，並根據您的現有水平與進階目標（如考級、演奏技巧提升等）設計專屬課程，幫助您突破瓶頸，更上一層樓。</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-accordion-item u-accordion-item-3">
+                      <a class="u-accordion-link u-button-style u-text-palette-4-base u-accordion-link-3" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false" role="tab"><span class="u-accordion-link-text"> 🎵 我需要買學樂器在家中練習嗎？</span><span class="u-accordion-link-icon u-icon u-icon-circle u-palette-3-base u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-a4a8"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-a4a8"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+                      </a>
+                      <div class="u-accordion-pane u-align-left u-container-align-left u-container-style u-white u-accordion-pane-3" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb" role="tabpanel">
+                        <div class="u-container-layout u-valign-top u-container-layout-5">
+                          <p class="u-text u-text-4"> 我們強烈建議學員在家中備有樂器（如鋼琴、電子琴等），以便日常練習鞏固所學。如尚未購置，我們可提供選購建議，中心亦設有練習室供學員預約使用。<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-accordion-item u-accordion-item-4">
+                      <a class="u-accordion-link u-button-style u-text-palette-4-base u-accordion-link-4" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false" role="tab"><span class="u-accordion-link-text"> 🎵 最快可以幾時上堂？</span><span class="u-accordion-link-icon u-icon u-icon-circle u-palette-3-base u-text-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-f384"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-f384"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+                      </a>
+                      <div class="u-accordion-pane u-align-left u-container-align-left u-container-style u-white u-accordion-pane-4" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb" role="tabpanel">
+                        <div class="u-container-layout u-valign-top u-container-layout-6">
+                          <p class="u-text u-text-default u-text-5"> 預約試堂或正式課程非常便捷！通常可在3日內安排上課，具體時間視乎師資與課室安排。歡迎即時聯絡我們，為您優先協調合適时段。<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-image u-section-8" id="sec-8e98" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-1">辦學理念 </h5>
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-2">在你的音樂之旅中一路陪伴 </h2>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-align-center u-container-style u-custom-item u-list-item u-palette-3-base u-repeater-item u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54 54" style=""><use xlink:href="#svg-48ba"></use></svg><svg class="u-svg-content" viewBox="0 0 54 54" x="0px" y="0px" id="svg-48ba" style="enable-background:new 0 0 54 54;"><g><path d="M27,8c-9.374,0-17,7.626-17,17c0,7.112,4.391,13.412,11,15.9V50c0,0.553,0.447,1,1,1h1v2c0,0.553,0.447,1,1,1h6
+		c0.553,0,1-0.447,1-1v-2h1c0.553,0,1-0.447,1-1v-9.1c6.609-2.488,11-8.788,11-15.9C44,15.626,36.374,8,27,8z M30,49
+		c-0.553,0-1,0.447-1,1v2h-4v-2c0-0.553-0.447-1-1-1h-1v-5h8v5H30z M31.688,39.242C31.277,39.377,31,39.761,31,40.192V42h-8v-1.808
+		c0-0.432-0.277-0.815-0.688-0.95C16.145,37.214,12,31.49,12,25c0-8.271,6.729-15,15-15s15,6.729,15,15
+		C42,31.49,37.855,37.214,31.688,39.242z"></path><path d="M27,6c0.553,0,1-0.447,1-1V1c0-0.553-0.447-1-1-1s-1,0.447-1,1v4C26,5.553,26.447,6,27,6z"></path><path d="M51,24h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4c0.553,0,1-0.447,1-1S51.553,24,51,24z"></path><path d="M7,24H3c-0.553,0-1,0.447-1,1s0.447,1,1,1h4c0.553,0,1-0.447,1-1S7.553,24,7,24z"></path><path d="M43.264,7.322l-2.828,2.828c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293
+		s0.512-0.098,0.707-0.293l2.828-2.828c0.391-0.391,0.391-1.023,0-1.414S43.654,6.932,43.264,7.322z"></path><path d="M12.15,38.436l-2.828,2.828c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293
+		s0.512-0.098,0.707-0.293l2.828-2.828c0.391-0.391,0.391-1.023,0-1.414S12.541,38.045,12.15,38.436z"></path><path d="M41.85,38.436c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2.828,2.828c0.195,0.195,0.451,0.293,0.707,0.293
+		s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L41.85,38.436z"></path><path d="M12.15,11.564c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414l-2.828-2.828
+		c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L12.15,11.564z"></path><path d="M27,13c-6.617,0-12,5.383-12,12c0,0.553,0.447,1,1,1s1-0.447,1-1c0-5.514,4.486-10,10-10c0.553,0,1-0.447,1-1
+		S27.553,13,27,13z"></path>
+</g></svg></span>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-3"> 使命 (Mission)</h5>
+                <p class="u-text u-text-4"> 以一對一精細指導，點燃每位學員的音樂熱情</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54 54" style=""><use xlink:href="#svg-7e2a"></use></svg><svg class="u-svg-content" viewBox="0 0 54 54" x="0px" y="0px" id="svg-7e2a" style="enable-background:new 0 0 54 54;"><g><path d="M51.22,21h-5.052c-0.812,0-1.481-0.447-1.792-1.197s-0.153-1.54,0.42-2.114l3.572-3.571
+		c0.525-0.525,0.814-1.224,0.814-1.966c0-0.743-0.289-1.441-0.814-1.967l-4.553-4.553c-1.05-1.05-2.881-1.052-3.933,0l-3.571,3.571
+		c-0.574,0.573-1.366,0.733-2.114,0.421C33.447,9.313,33,8.644,33,7.832V2.78C33,1.247,31.753,0,30.22,0H23.78
+		C22.247,0,21,1.247,21,2.78v5.052c0,0.812-0.447,1.481-1.197,1.792c-0.748,0.313-1.54,0.152-2.114-0.421l-3.571-3.571
+		c-1.052-1.052-2.883-1.05-3.933,0l-4.553,4.553c-0.525,0.525-0.814,1.224-0.814,1.967c0,0.742,0.289,1.44,0.814,1.966l3.572,3.571
+		c0.573,0.574,0.73,1.364,0.42,2.114S8.644,21,7.832,21H2.78C1.247,21,0,22.247,0,23.78v6.439C0,31.753,1.247,33,2.78,33h5.052
+		c0.812,0,1.481,0.447,1.792,1.197s0.153,1.54-0.42,2.114l-3.572,3.571c-0.525,0.525-0.814,1.224-0.814,1.966
+		c0,0.743,0.289,1.441,0.814,1.967l4.553,4.553c1.051,1.051,2.881,1.053,3.933,0l3.571-3.572c0.574-0.573,1.363-0.731,2.114-0.42
+		c0.75,0.311,1.197,0.98,1.197,1.792v5.052c0,1.533,1.247,2.78,2.78,2.78h6.439c1.533,0,2.78-1.247,2.78-2.78v-5.052
+		c0-0.812,0.447-1.481,1.197-1.792c0.751-0.312,1.54-0.153,2.114,0.42l3.571,3.572c1.052,1.052,2.883,1.05,3.933,0l4.553-4.553
+		c0.525-0.525,0.814-1.224,0.814-1.967c0-0.742-0.289-1.44-0.814-1.966l-3.572-3.571c-0.573-0.574-0.73-1.364-0.42-2.114
+		S45.356,33,46.168,33h5.052c1.533,0,2.78-1.247,2.78-2.78V23.78C54,22.247,52.753,21,51.22,21z M52,30.22
+		C52,30.65,51.65,31,51.22,31h-5.052c-1.624,0-3.019,0.932-3.64,2.432c-0.622,1.5-0.295,3.146,0.854,4.294l3.572,3.571
+		c0.305,0.305,0.305,0.8,0,1.104l-4.553,4.553c-0.304,0.304-0.799,0.306-1.104,0l-3.571-3.572c-1.149-1.149-2.794-1.474-4.294-0.854
+		c-1.5,0.621-2.432,2.016-2.432,3.64v5.052C31,51.65,30.65,52,30.22,52H23.78C23.35,52,23,51.65,23,51.22v-5.052
+		c0-1.624-0.932-3.019-2.432-3.64c-0.503-0.209-1.021-0.311-1.533-0.311c-1.014,0-1.997,0.4-2.761,1.164l-3.571,3.572
+		c-0.306,0.306-0.801,0.304-1.104,0l-4.553-4.553c-0.305-0.305-0.305-0.8,0-1.104l3.572-3.571c1.148-1.148,1.476-2.794,0.854-4.294
+		C10.851,31.932,9.456,31,7.832,31H2.78C2.35,31,2,30.65,2,30.22V23.78C2,23.35,2.35,23,2.78,23h5.052
+		c1.624,0,3.019-0.932,3.64-2.432c0.622-1.5,0.295-3.146-0.854-4.294l-3.572-3.571c-0.305-0.305-0.305-0.8,0-1.104l4.553-4.553
+		c0.304-0.305,0.799-0.305,1.104,0l3.571,3.571c1.147,1.147,2.792,1.476,4.294,0.854C22.068,10.851,23,9.456,23,7.832V2.78
+		C23,2.35,23.35,2,23.78,2h6.439C30.65,2,31,2.35,31,2.78v5.052c0,1.624,0.932,3.019,2.432,3.64
+		c1.502,0.622,3.146,0.294,4.294-0.854l3.571-3.571c0.306-0.305,0.801-0.305,1.104,0l4.553,4.553c0.305,0.305,0.305,0.8,0,1.104
+		l-3.572,3.571c-1.148,1.148-1.476,2.794-0.854,4.294c0.621,1.5,2.016,2.432,3.64,2.432h5.052C51.65,23,52,23.35,52,23.78V30.22z"></path><path d="M27,18c-4.963,0-9,4.037-9,9s4.037,9,9,9s9-4.037,9-9S31.963,18,27,18z M27,34c-3.859,0-7-3.141-7-7s3.141-7,7-7
+		s7,3.141,7,7S30.859,34,27,34z"></path>
+</g></svg></span>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-5"> 願景 (Vision)</h5>
+                <p class="u-text u-text-6"> 成為最具口碑的社區音樂中心，讓音樂教育走進每個家庭，培養終身音樂愛好者</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 60 60" style=""><use xlink:href="#svg-a720"></use></svg><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" id="svg-a720" style="enable-background:new 0 0 60 60;"><g><path d="M38.914,0H6.5v60h47V14.586L38.914,0z M39.5,3.414L50.086,14H39.5V3.414z M8.5,58V2h29v14h14v42H8.5z"></path><path d="M42.5,21h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,21,42.5,21z"></path><path d="M22.875,18.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
+		C17.987,23.901,18.243,24,18.5,24c0.22,0,0.441-0.072,0.624-0.219l5-4c0.432-0.346,0.501-0.975,0.156-1.406
+		C23.936,17.943,23.306,17.874,22.875,18.219z"></path><path d="M42.5,32h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,32,42.5,32z"></path><path d="M22.875,29.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
+		C17.987,34.901,18.243,35,18.5,35c0.22,0,0.441-0.072,0.624-0.219l5-4c0.432-0.346,0.501-0.975,0.156-1.406
+		C23.936,28.943,23.306,28.874,22.875,29.219z"></path><path d="M42.5,43h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,43,42.5,43z"></path><path d="M22.875,40.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
+		C17.987,45.901,18.243,46,18.5,46c0.22,0,0.441-0.072,0.624-0.219l5-4c0.432-0.346,0.501-0.975,0.156-1.406
+		C23.936,39.943,23.306,39.874,22.875,40.219z"></path>
+</g></svg></span>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-7"> 價值觀 (Values)</h5>
+                <p class="u-text u-text-8"> 專業：考級導師＋進口樂器，確保教學品質<br> 個性化：一對一演奏課，量身定制進度<br> 溫度：從4歲學童到成人，溫暖陪伴每段旅程<br> 創新：融合樂理/試唱練耳＋器樂陪練
+                </p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-custom-item u-list-item u-palette-4-base u-repeater-item u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-icon u-icon-circle u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 55.867 55.867" style=""><use xlink:href="#svg-58df"></use></svg><svg class="u-svg-content" viewBox="0 0 55.867 55.867" x="0px" y="0px" id="svg-58df" style="enable-background:new 0 0 55.867 55.867;"><path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+	c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+	c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+	c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+	c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+	C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+	l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+	l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+	"></path></svg></span>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-9"> 目標 (Goals)</h5>
+                <p class="u-text u-text-10"> 每年協助200位學員通過英皇考級<br> 開設「親子音樂啟蒙班」與「成人深夜琴房」<br> 2026年於九龍區擴設第二分校
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-1">聯絡我們</a>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-section-9" id="sec-35d0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-1">學生評價 </h2>
+        <div class="u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-custom-item u-grey-15 u-list-item u-radius-25 u-repeater-item u-shape-round u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-align-left u-icon u-icon-circle u-text-palette-4-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 95.333 95.332" style=""><use xlink:href="#svg-a13b"></use></svg><svg class="u-svg-content" viewBox="0 0 95.333 95.332" x="0px" y="0px" id="svg-a13b" style="enable-background:new 0 0 95.333 95.332;"><g><g><path d="M30.512,43.939c-2.348-0.676-4.696-1.019-6.98-1.019c-3.527,0-6.47,0.806-8.752,1.793    c2.2-8.054,7.485-21.951,18.013-23.516c0.975-0.145,1.774-0.85,2.04-1.799l2.301-8.23c0.194-0.696,0.079-1.441-0.318-2.045    s-1.035-1.007-1.75-1.105c-0.777-0.106-1.569-0.16-2.354-0.16c-12.637,0-25.152,13.19-30.433,32.076    c-3.1,11.08-4.009,27.738,3.627,38.223c4.273,5.867,10.507,9,18.529,9.313c0.033,0.001,0.065,0.002,0.098,0.002    c9.898,0,18.675-6.666,21.345-16.209c1.595-5.705,0.874-11.688-2.032-16.851C40.971,49.307,36.236,45.586,30.512,43.939z"></path><path d="M92.471,54.413c-2.875-5.106-7.61-8.827-13.334-10.474c-2.348-0.676-4.696-1.019-6.979-1.019    c-3.527,0-6.471,0.806-8.753,1.793c2.2-8.054,7.485-21.951,18.014-23.516c0.975-0.145,1.773-0.85,2.04-1.799l2.301-8.23    c0.194-0.696,0.079-1.441-0.318-2.045c-0.396-0.604-1.034-1.007-1.75-1.105c-0.776-0.106-1.568-0.16-2.354-0.16    c-12.637,0-25.152,13.19-30.434,32.076c-3.099,11.08-4.008,27.738,3.629,38.225c4.272,5.866,10.507,9,18.528,9.312    c0.033,0.001,0.065,0.002,0.099,0.002c9.897,0,18.675-6.666,21.345-16.209C96.098,65.559,95.376,59.575,92.471,54.413z"></path>
+</g>
+</g></svg></span>
+                <p class="u-text u-text-2"> 跟左老師 2 年幾, 老師既教學好認真,&nbsp; 有要求, 不得過且過 。 呀仔其間不斷進步， 亦越來越喜歡練習 最近考 3 級成績亦比考 1 級時進步很多， 多謝老師 一直以來嘅教導同提點👍🏻已推薦給不同朋友, 回饋都是好評~</p>
+                <div alt="" class="u-image u-image-circle u-image-1" data-image-width="1280" data-image-height="853"></div>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-3">高先生</h5>
+                <h5 class="u-custom-font u-text u-text-font u-text-4">家長</h5>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-item u-grey-5 u-list-item u-radius-25 u-repeater-item u-shape-round u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-align-left u-icon u-icon-circle u-text-palette-4-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 351.128 351.128" style=""><use xlink:href="#svg-c1b6"></use></svg><svg class="u-svg-content" viewBox="0 0 351.128 351.128" x="0px" y="0px" id="svg-c1b6" style="enable-background:new 0 0 351.128 351.128;"><g><path d="M72.326,147.33c4.284-26.928,37.944-55.692,64.26-56.304c1.836,0,3.672-0.612,4.896-1.836   c1.224-0.612,2.448-1.224,3.06-3.06c9.18-17.136,4.284-30.6-11.016-41.616c-17.748-12.852-45.9,0-59.976,11.628   C38.054,85.518,1.946,136.313,3.782,184.662c-6.12,32.437-4.896,67.32,4.284,96.084c6.12,18.36,23.868,27.54,42.228,28.764   c18.36,1.225,56.304,6.732,72.828-4.283c16.524-11.017,17.748-32.437,19.584-50.796c1.836-20.196,7.344-58.141-9.792-74.053   C115.778,165.078,66.818,181.602,72.326,147.33z"></path><path d="M274.286,147.33c4.284-26.928,37.943-55.692,64.26-56.304c1.836,0,3.672-0.612,4.896-1.836   c1.225-0.612,2.448-1.224,3.061-3.06c9.18-17.136,4.284-30.6-11.016-41.616c-17.748-12.852-45.9,0-59.977,11.628   c-35.496,29.376-71.604,80.172-69.768,128.52c-6.12,32.437-4.896,67.32,4.283,96.084c6.12,18.36,23.868,27.54,42.229,28.764   c18.36,1.225,56.304,6.732,72.828-4.283c16.523-11.017,17.748-32.437,19.584-50.796c1.836-20.196,7.344-58.141-9.792-74.053   C317.738,165.078,268.166,181.602,274.286,147.33z"></path>
+</g></svg></span>
+                <p class="u-text u-text-5"> 十分欣賞老師的專業態度，而且耐心有禮，為我小朋友不同情況提供不同的建議，非常高質素，我們跨區來旺角上課也是值得！</p>
+                <div alt="" class="u-image u-image-circle u-image-2" data-image-width="1280" data-image-height="853"></div>
+                <h5 class="u-custom-font u-font-montserrat u-text u-text-6">鄺先生</h5>
+                <h5 class="u-custom-font u-text u-text-font u-text-7">家長 </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="http://wa.me/85268193515" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-base u-palette-4-base u-radius-50 u-btn-1">聯絡我們</a>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-4-dark-3 u-section-10" id="sec-46d3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-container-align-center u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
+            <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">了解試堂優惠！</h2>
+            <p class="u-text u-text-grey-40 u-text-2">留下你的聯絡方法／直接WhatsApp​我們！</p>
+            <div class="u-form u-form-1">
+              <form action="https://service.nicepagesrv.com/form/v4/form-process" class="u-clearfix u-form-horizontal u-form-spacing-13 u-inner-form" source="email" name="form" style="padding: 11px;">
+                <div class="u-form-group u-form-name">
+                  <label for="name-2e40" class="u-label">姓名 </label>
+                  <input type="text" placeholder="Enter your Name" id="name-2e40" name="name" class="u-input u-input-rectangle u-radius-30" required="">
+                </div>
+                <div class="u-form-group u-form-phone">
+                  <label for="email-2e40" class="u-label">電話</label>
+                  <input type="tel" placeholder="9123 4567" id="email-2e40" name="tel" class="u-input u-input-rectangle u-radius-30" required="required" data-country-code="hk">
+                </div>
+                <div class="u-align-left u-form-group u-form-submit">
+                  <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1">遞交</a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="240cddce-2cb2-60d4-2774-761f21a5f27a">
+                <input type="hidden" name="siteKey" value="6Ldx4PsrAAAAACq6Sl2MfMvCGQCFcZJFPTTGhzry">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-11" id="sec-ecf0">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-grey-5 u-layout-cell u-size-39 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">聯絡我們</h2>
+                  <p class="u-text u-text-2"><span style="font-weight: 700;" class="u-text-palette-3-base">
+                      <a href="tel:+85268193515" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"><span class="u-file-icon u-icon"><img src="https://img.icons8.com/?id=16713" alt=""></span>&nbsp;(852) 6819 3515
+                      </a></span>
+                    <br>
+                    <a href="mailto:ehmusiccenter@outlook.com" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">ehmusiccenter@outlook.com</a>
+                    <br>
+                    <a href="https://www.google.com/maps/dir//Shop+A,+G%2FF,+%E5%8D%93%E8%AD%BD%E9%9F%B3%E6%A8%82%E4%B8%AD%E5%BF%83+EH+Music+Center" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" title="Map" target="_blank">香港九龍何文田亞皆老街100號皆寧大廈地下A鋪</a>
+                    <br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-21 u-white u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3">追蹤我們 </h2>
+                  <div class="u-social-icons u-social-icons-1">
+                    <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/EHMusicCenter"><span class="u-icon u-social-facebook u-social-icon u-text-black u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-ffdf"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ffdf"><path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
+                    </a>
+                    <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/eh_music_center"><span class="u-icon u-social-icon u-social-instagram u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-b671"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b671"><path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+	 M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path fill="#FFFFFF" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+	V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+	c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">&copy; <span id="year"></span> EH Music Center 卓譽音樂中心 | All rights reserved.</p>
+  <script>
+    // Dynamically set the current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+      </div></footer>
+
+</body></html>

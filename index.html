@@ -935,7 +935,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       alert("請輸入您的姓名");
       return;
     }
-    const message = `Hi, I am ${encodeURIComponent(name)}, I want to know more about your courses`;
+    const message = `你好, 我叫 ${encodeURIComponent(name)}, 我想查詢: ${encodeURIComponent(query)}`;
     const whatsappURL = `https://wa.me/85268193515?text=${message}`;
     window.open(whatsappURL, '_blank');
   }

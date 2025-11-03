@@ -18136,7 +18136,7 @@ div.u-video,
 .u-sidenav .u-nav-item {
   display: block;
   height: auto;
-  margin-left: 0;
+  margin-right: 0;
   /* override horizontal spacing */
 }
 .u-sidenav .u-nav-link {

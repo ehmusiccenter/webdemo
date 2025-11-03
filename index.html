@@ -911,16 +911,35 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
             <div class="u-form u-form-1">
               <form action="https://service.nicepagesrv.com/form/v4/form-process" class="u-clearfix u-form-horizontal u-form-spacing-13 u-inner-form" source="email" name="form" style="padding: 11px;">
                 <div class="u-form-group u-form-name">
-                  <label for="name-2e40" class="u-label">姓名 </label>
-                  <input type="text" placeholder="Enter your Name" id="name-2e40" name="name" class="u-input u-input-rectangle u-radius-30" required="">
-                </div>
-                <div class="u-form-group u-form-phone">
-                  <label for="email-2e40" class="u-label">電話</label>
-                  <input type="tel" placeholder="9123 4567" id="email-2e40" name="tel" class="u-input u-input-rectangle u-radius-30" required="required" data-country-code="hk">
-                </div>
-                <div class="u-align-left u-form-group u-form-submit">
-                  <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1">遞交</a>
-                  <input type="submit" value="submit" class="u-form-control-hidden">
+					<!-- Name Input -->
+				<label for="name-2e40" class="u-label">姓名 </label>
+				<input type="text" placeholder="Enter your Name" id="name-2e40" name="name" class="u-input u-input-rectangle u-radius-30" required="">
+				<!-- Phone Input -->
+				<div class="u-form-group u-form-phone">
+ 				 <label for="email-2e40" class="u-label">電話</label>
+  				<input type="tel" placeholder="9123 4567" id="email-2e40" name="tel" class="u-input u-input-rectangle u-radius-30" required="required" data-country-code="hk">
+				</div>
+
+				<!-- Submit Button -->
+				<div class="u-align-left u-form-group u-form-submit">
+ 				 <a href="#" onclick="sendWhatsAppMessage()" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-4-base u-radius-50 u-btn-1">遞交</a>
+ 				 <input type="submit" value="submit" class="u-form-control-hidden">
+				</div>
+
+				<!-- JavaScript -->
+				<script>
+  				function sendWhatsAppMessage() {
+    				const name = document.getElementById("name-2e40").value.trim();
+    				if (!name) {
+    			  alert("請輸入您的姓名");
+     			 return;
+  			  }
+  			  const message = `Hi, I am ${encodeURIComponent(name)}, I want to know more about your courses`;
+  				  const whatsappURL = `https://wa.me/85268193515?text=${message}`;
+  				  window.open(whatsappURL, '_blank');
+ 				 }
+			</script>
+			
                 </div>
                 <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                 <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>

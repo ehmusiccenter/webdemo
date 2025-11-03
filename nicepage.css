@@ -18246,13 +18246,13 @@ div.u-video,
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.u-menu.u-offcanvas:not(.u-menu-open-right) .u-sidenav {
-  border-left: none;
-}
-.u-menu.u-offcanvas.u-menu-open-right .u-sidenav {
-  order: 1;
+.u-menu.u-offcanvas:not(.u-menu-open-left) .u-sidenav {
   border-right: none;
-  transition-property: margin-right;
+}
+.u-menu.u-offcanvas.u-menu-open-left .u-sidenav {
+  order: 1;
+  border-left: none;
+  transition-property: margin-left;
 }
 .u-menu.u-offcanvas.open .u-sidenav {
   margin-left: 0;
